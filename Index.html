@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>DENTAL HOSPITAL PROJECT</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" media="all" href="css/reset.css"> 
+<link rel="stylesheet" media="all" href="css/style_light.css"> 
+
+<!-- Current jQuery codebase -->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<!-- Tiptip is a tooltip or hover replacement for the system default -->
+<script src="scripts/jquery.tipTip.js"></script>
+<script src="scripts/jquery.tipTip.minified.js"></script>
+<!-- Overscroll mimics the iDevice browser behaviour -->
+<script src="scripts/jquery.overscroll.js"></script>
+
+<script type="text/javascript"> 
+// Browserswitcher to determine if User is operating from a mobile device, if true the "iOS" like interaction is deactivated
+// Returns "TRUE" if user is operating from a mobile device
+function MobileUser(){
+	var Browser = navigator.userAgent.toLowerCase();
+	var MobileBrowsers = "iphone";	
+	if (Browser.indexOf(MobileBrowsers) > -1){
+		return true;		
+	} else {
+		return false;
+	}	
+}
+// Calls browserswitcher prior to execution of desktop portion of the site
+if (MobileUser() == false){	
+	// Resizes the image to fit 100% height of the open browser window
+	$(window).load(function() {    
+	var theWindow        = $(window),
+	    $bg              = $("#bg"),
+	    aspectRatio      = $bg.width() / $bg.height();	
+		function resizeBg() {	
+		        if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
+		            $bg
+		                .removeClass()
+		                .addClass('bgheight');
+		        } else {
+		            $bg
+		                .removeClass()
+		                .addClass('bgwidth');
+		        }	
+		}	
+		theWindow.resize(function() {
+			resizeBg();
+		}).trigger("resize");	
+	});	
+	// Overscroll function allows the desktop user to have a "touch-like" interactive experience
+	$(function(){   
+	// add a google wave to a container div (the ID is my blog ID)
+    $("#overscroll2").overscroll();
+	});
+	$("#link").click(function(){
+	    if(!o.data("dragging")) {
+	        console.log("clicked!");
+	    } else {
+	        return false;
+	    }
+	});
+}
+</script>    
+</head>
+<body>
+	<div class="fullscreen">
+		<div id="overscroll2"><img src="images/back_web23.jpg" id="bg" alt="">
+<!--
+			// No Idea what this block of code is supposed to do...
+	    	<ul>
+	        <li>
+            	<div id="screen5">     
+				</div>      
+				<div id="screen7">
+				</div>
+  			</li>		
+	    	</ul>
+-->
+		</div>
+	</div>
+</body>
+</html>

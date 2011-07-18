@@ -1,0 +1,558 @@
+
+/* Global reset */
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+ 
+
+body {
+	height:100%;
+	width:100%;
+	margin:0;padding:0;
+	overflow:hidden;
+	float:left;
+	font-size:100%;
+}
+
+p{
+	font-family:'Oswald', arial, serif;
+	color: #333;
+	font-size: 1.2em;
+	z-index:9000;
+}
+
+h2{
+	font-family: 'Oswald', arial, serif; 
+	text-shadow: 0px 1px 1px #fff;
+	color:#000;
+	text-align:right;
+	line-height:1em;
+	font-size:2.5em;
+	z-index:9000;
+	
+}
+
+h3{
+	font-family: 'Ultra', arial, serif;
+	font-size:2.8em;
+	text-shadow:3px 3px 0px #fff, 5px 5px 0px #000;
+	color:#000;
+	text-align:right;
+	z-index:9000;
+	
+}
+
+a:link {
+	color: #333;
+}
+a:visited {
+	color: #333;
+}
+a:hover {
+	color: #09F;
+}
+
+
+div.fullscreen{
+    display:block;
+
+    /*set the div in the top-left corner of the screen*/
+    position:absolute;
+    top:0;
+    left:0;
+    
+    /*set the width and height to 100% of the screen*/
+    width:100%;
+    height:100%;
+  }
+
+
+
+#video{
+	left:10%;top:200px;
+	position: absolute;
+	width:490px;
+	height:400px;
+	text-align:center;
+	border:dashed #C06 4px;
+}
+
+#parallax{  position:relative; overflow:hidden; width:60em; height:20em;
+	z-index:1; 
+	class:clear;
+	background-image:url(../images/back2.jpg);
+	background-repeat:no-repeat;
+	background-size:100%;
+  top:0;
+  left:0;
+	}
+#parallax2{  position:relative; overflow:hidden; width:60em; height:20em;
+	}
+	
+	
+	#parallax3{  position: absolute; overflow:hidden; width:60em; height:20em;}
+	
+	.img1 { background-image:url(../images/back2.jpg); }
+
+  
+
+#overscroll {     display:block;
+
+    /*set the div in the top-left corner of the screen*/
+    position:absolute;
+    top:0;
+    left:0;
+    
+    /*set the width and height to 100% of the screen*/
+    width:100%;
+    height:100%; }
+
+#overscroll ul { width: 200%; height:200%; margin:0; padding: 0; text-align:center; background-position: top right; /*background:url(images/bg_im.gif);*/ background-repeat:no-repeat; }
+	#overscroll li { display: block; float: left; width: 100%; height: 100%; }
+	#overscroll li.alt {width: 50%; background-color: #000;);}
+	#overscroll li.no-drag { background-color: #000; color: #FFF; }
+	#overscroll li.last { clear: both; visibility: hidden; height: 0; padding: 0; }
+	
+
+
+
+
+#overscroll2 {     display:block;
+
+    /*set the div in the top-left corner of the screen*/
+    position:absolute;
+    top:0;
+    left:0;
+    
+    /*set the width and height to 100% of the screen*/
+    width:100%;
+    height:100%; }
+	
+#overscroll2 ul { width: 400%; float:left; height:120%; margin:0; padding: 0; text-align:center; background-position: top right; /*background:url(images/bg_im.gif);*/ background-repeat:no-repeat; }
+	#overscroll2 li { display: block; float: left; width: 100%; height: 50%; }
+	#overscroll2 li.alt {width: 50%; background-color: #000;);}
+	#overscroll2 li.no-drag { background-color: #000; color: #FFF; }
+	#overscroll2 li.last { clear: both; visibility: hidden; height: 0; padding: 0; }
+
+
+
+
+#screen1{
+	width:100%;
+	height:100%;
+	top:0; left:0;
+	position: absolute;
+	/*border-right: dotted #000 2px;
+	border-bottom: dotted #000 2px;*/
+	background-image:url(../images/ribbon.png);
+	background-position:top left;
+	background-repeat:repeat-y;
+	
+}
+
+#story1{
+	height:94px;
+	width:193px;
+	position: absolute;
+	background-image:url(../images/back-03_01.png);
+	bottom:0;
+	right:0;
+	z-index:500;
+	float:left;
+}
+
+#storyA{
+	height:82px;
+	width:85px;
+	position: absolute;
+	background-image:url(../images/nav_01.png);
+	background-repeat:no-repeat;
+	bottom:0;
+	right:0;
+	z-index:500;
+}
+
+#storyB{
+	height:82px;
+	width:85px;
+	position: absolute;
+	background-image:url(../images/nav_02.png);
+	background-repeat:no-repeat;
+	bottom:0;
+	left:0;
+	z-index:500;
+}
+
+#storyC{
+	height:82px;
+	width:85px;
+	position: absolute;
+	background-image:url(../images/nav_03.png);
+	background-repeat:no-repeat;
+	top:0;
+	right:0;
+	z-index:500;
+}
+
+#storyD{
+	height:82px;
+	width:85px;
+	position: absolute;
+	background-image:url(../images/nav_04.png);
+	background-repeat:no-repeat;
+	top:0;
+	left:0;
+	z-index:500;
+}
+
+#screen2{
+	width:100%;
+	height:100%;
+	top:0; left:100%;
+	position: absolute;
+	text-align:left;
+	/*border-bottom: dotted #000 2px;*/
+	background-image:url(../images/ribbon_right.png);
+	background-position:top right;
+	background-repeat:repeat-y;
+	
+}
+
+#screen3{
+	width:100%;
+	height:100%;
+	top:100%; left:0;
+	position: absolute;
+	/*border-right: dotted #000 2px;*/
+	background-image:url(../images/ribbon.png);
+	background-position:top left;
+	background-repeat:repeat-y;
+	
+}
+
+#screen4{
+	width:100%;
+	height:100%;
+	top:100%; left:100%;
+	position: absolute;
+	background-image:url(../images/ribbon_right.png);
+	background-position:top right;
+	background-repeat:repeat-y;
+	
+}
+
+
+#screen5{
+	width:400%;
+	height:100%;
+	float:left;
+	top:0; left:0;
+	position: absolute;
+	background-repeat:no-repeat;
+	background-position:bottom right;
+	
+}
+
+#screen6{
+	width:100%;
+	height:20%;
+	top:100%; left:0%;
+	position: absolute;
+	background-color:#000;
+	
+}
+
+
+#screen7{
+	width:400%;
+	height:20%;
+	top:100%; left:0%;
+	text-align:left;
+	position: absolute;
+	background-color:#000;
+	
+}
+
+#bg { position: absolute; top: 0; left: 0; }
+.bgwidth { width: 100%; }
+.bgheight { height: 100%; }
+ 
+/* Remove annoying border on linked images. */
+a img {border: none;}
+ 
+/* Remove annoying border on links in Firefox */
+a:active, a:focus
+  {outline:0;}
+ 
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote:before, blockquote:after, q:before, q:after {content: "";}
+blockquote, q {quotes: "" "";}
+ 
+/* Tables still need 'cellspacing="0"' in the markup. */
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td {text-align: left; font-weight: normal; }
+table, td, th {vertical-align: middle;}
+ 
+/* Clearing without structural markup */
+.clear
+  {display: inline-block;}   
+.clear:after
+  {content:"."; display:block; height:0; clear:both; visibility:hidden;}
+* html .clear
+  {height: 1%;}
+.clear
+  {display: block;}
+  
+  
+  
+  
+.clear2
+  {display: inline-block;}   
+.clear2:after
+  {content:"."; display:block; height:0; clear:both; visibility:hidden;}
+* html .clear2
+  {height: 1%;}
+.clear2
+  {display: block;}
+
+
+
+#more{
+	background-color:#CF3;
+	top:300px;
+	left:200px;
+	width:200px;
+	height:200px;
+	position:absolute;
+}
+
+#heading_pink{
+	width:95%;
+	height:8%;
+	margin-top:12%;
+	background-color:#ff0099;
+	background-image:url(../images/heading_pink.jpg);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-position:right;
+	font-family: 'Ultra', arial, serif;
+	font-size:3.3em;
+	color:#FFF;
+	text-shadow: 0px 1px 1px #000;
+	text-align:left;
+	padding-left:3.3%;
+}
+
+#header{
+	height:20%;
+	width:100%;
+	margin-left:20px;
+	text-align:left;
+	background-image:url(../images/header_back.jpg);
+	background-repeat:repeat-x;
+}
+
+#flowers{
+	width:35%;
+	height:75%;
+	margin-left:20px;
+	text-align:left;
+	background-image:url(../images/flowers.jpg);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-position:bottom right;
+}
+
+#video_laptop{
+
+	width:60%;
+	height:75%;
+	position: absolute;
+	left:36%;
+	margin-left:20px;
+	top:36%;
+}
+
+#line{
+	width:100%;
+	border-bottom:#000 dotted 2px;
+	
+}
+
+#left_col{
+	width:40%;
+	height:75%;
+	text-align:left;
+	top:20%;
+	position:absolute;
+}
+
+#right_col{
+
+	width:45%;
+	height:75%;
+	position: absolute;
+	left:42%;
+	top:20%;
+}
+
+
+#left_col2{
+	width:30%;
+	height:75%;
+	border-top:solid #000 1px;
+	text-align:left;
+	top:20%;
+	position:absolute;
+}
+
+
+#go_home{
+	width:6%;
+	height:100%;
+	float: right;
+	text-align:left;
+	padding-bottom:1px;
+	z-index:9000;
+}
+
+#headlines{
+	width:100%;
+	height:10%;
+	position:fixed;
+	z-index:9000;
+	text-align:center;
+	float:left;
+	
+}
+
+#headlines_around{
+	width:93%;
+	padding-bottom:1%;
+	position:fixed;
+	z-index:9000;
+	text-align:center;
+	border-left:#000 dotted 2px;
+	border-right:#000 dotted 2px;
+	border-bottom:#000 dotted 2px;
+	margin-left:3.3%;
+	float:left;
+	
+}
+
+#hospital{
+	width:187px;
+	height:47px;
+	position:fixed;
+	top:92%;
+	left:10px;
+	z-index:9000;
+	
+}
+
+#headlines_box{
+	width:25%;
+	height:100%;
+	float:left;
+	text-align:left;
+	margin-left:6%;
+	padding-bottom:1px;
+	background-color:#fff;
+	border:#000 dotted 2px;
+	z-index:9000;
+	
+}
+
+
+#headlines_box p{
+	font-family:'Oswald', arial, serif;
+	color:#000;
+	margin-left:4%;
+	line-height:1.5em;
+	font-size: 1em;
+	z-index:9000;
+	
+}
+
+#headlines_box a{
+	font-family: 'Oswald', arial, serif; 
+	color:#000;
+	margin-left:4%;
+	float:right;
+	margin-right:30px;
+	line-height:1em;
+	font-size: 1em;
+	padding-bottom:5px;
+	text-decoration:none;
+	z-index:9000;
+}
+
+#headlines_box a:hover{
+	font-family: 'Oswald', arial, serif; 
+	color: #09C;
+	margin-left:4%;
+	float:right;
+	margin-right:30px;
+	padding-bottom:5px;
+	text-decoration:none;
+	line-height:1em;
+	font-size: 1em;
+	z-index:9000;
+}
+
+#headlines_top{
+	width:100%;
+	padding-top:3px;
+	padding-bottom:3px;
+	text-align:center;
+	float:left;
+	background-color: #CCC;
+	z-index:9000;
+	
+}
+
+#headlines_bottom{
+	width:100%;
+	height:6px;
+	text-align:center;
+	position: relative;
+	float:left;
+	z-index:9000;
+	
+}
+
+
+#headlines_top h1{
+	font-family: 'Oswald', arial, serif; 
+	text-shadow: 0px 1px 1px #fff;
+	font-stretch:expanded;
+	color:#000;
+	margin-left:4%;
+	font-size:20px;
+	z-index:9000;
+	
+}
+
+
+
+
+	#quizArea{
+		width: 20em;
+		height: 40em;
+		margin: 2em;
+	}
+
+
+
+
+
+
+
+
+.clearfix {
+clear: both;		
+	
+}

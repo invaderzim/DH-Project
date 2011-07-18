@@ -1,0 +1,51 @@
+
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"> 
+<head> 
+<title>Object not found!</title> 
+<link rev="made" href="mailto:stephband@googlemail.com" /> 
+<style type="text/css"><!--/*--><![CDATA[/*><!--*/ 
+    body { color: #000000; background-color: #FFFFFF; }
+    a:link { color: #0000CC; }
+    span {font-size: smaller;}
+/*]]>*/--></style> 
+</head> 
+ 
+<body> 
+<h1>Object not found!</h1> 
+<p> 
+ 
+ 
+    The requested URL was not found on this server.
+ 
+  
+ 
+    If you entered the URL manually please check your
+    spelling and try again.
+ 
+  
+ 
+</p> 
+<p> 
+If you think this is a server error, please contact
+the <a href="http://cloudflare.com/email-protection.html#e7949382978f85868983a7808888808b828a868e8bc984888a">webmaster</a>.
+ 
+</p> 
+ 
+<h2>Error 404</h2> 
+<address> 
+  <a href="/">webdev.stephband.info</a><br /> 
+  
+  <span>Mon Jun 27 15:50:00 2011<br /> 
+  Apache/2.0.55 (Ubuntu) mod_python/3.1.4 Python/2.4.3 PHP/5.1.2 mod_ssl/2.0.55 OpenSSL/0.9.8a mod_perl/2.0.2 Perl/v5.8.7</span> 
+</address> 
+<script type="text/javascript"> 
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&"cloudflare.com/email-protection"==a.substr(7 ,31)){s='';j=44;r=parseInt(a.substr(j,2),16);for(j+=2;a.length-j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
+/* ]]> */
+</script> 
+</body> 
+</html> 
+ 
